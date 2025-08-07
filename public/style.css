@@ -26,9 +26,11 @@ body {
   position: relative;
   z-index: 10;
 }
-span:hover{
-  color: #ff5e57;
+.logo:hover{
+  color: #FECB55FC;
   cursor: pointer;
+ 
+
 }
 
 /* Logo */
@@ -58,18 +60,19 @@ span:hover{
 }
 
 .nav-links li a:hover {
-  color: #ff5e57;
+  color:  #FECB55FC;
+
 }
 
 /* Button */
 .btn {
   background: #6C4EFF;
-  width: 110px;
+  width: 90px;
   height: 41px;
   border-radius: 12px;
   text-align: center;
 
-padding: 8.5px 10px;
+padding: 7.5px 11px;
   
   color: white;
   
@@ -80,7 +83,8 @@ padding: 8.5px 10px;
 .btn:hover {
   transition: ease-in,0.3s;
   background-color: #6C4EFF;
-    color: #ff5e57;
+    color: #FECB55FC;
+
 
 
 
@@ -105,12 +109,20 @@ padding: 8.5px 10px;
     display: flex;
     flex-direction: column;
     position: absolute;
+    left:  0;
     top: 80px;
     width: 100%;
-    background-color: #0F0F0F;
-    padding: 20px 20px;
+    background: #9580FDE8;
+ ;
+ ;
+    padding: 20px 0;
     gap: 20px;
     text-align: center;
+        animation: slideDown 0.4s ease-in-out;
+        overflow-y: auto;
+        max-height: 80vh;
+        z-index: 999;
+
   }
 
   .btn {
